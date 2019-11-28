@@ -98,7 +98,7 @@
 <meta property="og:site_name" content="我的博客">
 <meta property="og:description" content="什么是 Hexo？Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 安装1npm install hexo-cli -g2hexo init blog3cd blog4npm install5hexo server # 开启本地服务 简写 hexo s">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-11-28T16:01:14.196Z">
+<meta property="og:updated_time" content="2019-11-28T16:06:38.195Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -366,7 +366,7 @@
 <a id="more"></a>
 
 <p>安装插件</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save # hexo通过git发布（必装）</span></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save        #索引生成器</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-archive --save      #归档生成器</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-category --save     #分类生成器</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-tag --save          #标签生成器</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save           #hexo通过git发布（必装）</span></pre></td></tr></table></figure>
 
 <h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><p>找到<code>blog</code>根目录下的<code>_config.yml</code>文件，找到下面的<code>deploy:</code>并更改为</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">deploy:</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">  type: git</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  repo: git@github.com:wang7211401&#x2F;wang7211401.github.io.git #建好的仓库地址</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">  branch: master</span></pre></td></tr></table></figure>
